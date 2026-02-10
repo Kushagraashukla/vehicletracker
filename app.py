@@ -98,10 +98,13 @@ if video_file:
             )
 
         frame_placeholder.image(
-            cv2.cvtColor(frame, cv2.COLOR_BGR2RGB),
-            channels="RGB",
-            use_container_width=True
+        cv2.cvtColor(frame, cv2.COLOR_BGR2RGB),
+        channels="RGB",
+        use_column_width=True
+)
+
         )
 
     cap.release()
     st.success("Video processed successfully")
+
