@@ -103,8 +103,9 @@ if video_file:
         use_column_width=True
 )
 
-        )
+        
 
     cap.release()
     st.success("Video processed successfully")
+
 
