@@ -41,12 +41,12 @@ if video_file:
             break
 
         results = model.track(
-            frame,
-            persist=True,
-            imgsz=640,
-            conf=0.3,
-            verbose=False
+        frame,
+        persist=True,
+        conf=0.3,
+        verbose=False
         )[0]
+
 
         if results.boxes is None:
             continue
@@ -107,5 +107,6 @@ if video_file:
 
     cap.release()
     st.success("Video processed successfully")
+
 
 
